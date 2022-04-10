@@ -1,0 +1,81 @@
+.gameContainer {
+  padding: 5em;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 10em;
+  margin-top: 10em;
+  h2 {
+    margin-left: 4rem;
+    padding-bottom: 1em;
+    font-size: 2em;
+  }
+  p {
+    margin-left: 4rem;
+    width: 90%;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-bottom: 3rem;
+  }
+  color: $text;
+  box-shadow: rgba(0, 0, 0, 0.068) 0px 1px 40px 5px;
+  background-color: $backgroundColor2;
+  video {
+    width: 600px;
+    height: 400px;
+    background: $movie;
+  }
+}
+
+.mobileImg {
+  width: 10px;
+}
+
+.gameLink {
+  color: $link;
+}
+.gameLink:hover {
+  color: $hover;
+}
+.fileContainer {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  iframe {
+    height: 400px;
+    width: 600px;
+    background: $movie;
+  }
+  iframe,
+  video {
+    margin-bottom: 3rem;
+  }
+}
+.imgSlider {
+  width: 44rem;
+  img {
+    height: 400px;
+  }
+}
+.slick-prev:before,
+.slick-next:before {
+  color: $black;
+}
+
+@media screen and (max-width: 1024px) {
+  .gameContainer {
+    text-align: center;
+    h2 {
+      font-size: 2em;
+      margin: 0;
+    }
+    p {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+  }
+  .fileContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

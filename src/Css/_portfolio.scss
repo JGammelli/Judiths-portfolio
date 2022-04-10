@@ -1,0 +1,36 @@
+@import "colorVariable";
+#profileSection {
+  padding-top: 10rem;
+  background: $backgroundColor;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  h1,
+  h2,
+  p {
+    color: $text;
+    font-weight: 200;
+  }
+}
+
+#portfolieSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolieName {
+  text-align: center;
+  height: 5rem;
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  p {
+    font-size: 1.8em;
+  }
+}

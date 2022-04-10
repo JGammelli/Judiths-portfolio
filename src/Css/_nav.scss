@@ -1,0 +1,42 @@
+@import "colorVariable";
+#nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: $backgroundColor;
+
+  ul {
+    padding: 1em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  li {
+    padding-left: 5rem;
+  }
+  a {
+    text-decoration: none;
+    color: $link;
+    font-size: 1rem;
+  }
+  a:hover {
+    color: $hover;
+  }
+}
+
+//for smaller devices
+@media screen and (max-width: 1024px) {
+  #nav {
+    ul {
+      justify-content: space-around;
+    }
+    li {
+      padding-left: 0;
+    }
+    a {
+      font-size: 2rem;
+    }
+  }
+}

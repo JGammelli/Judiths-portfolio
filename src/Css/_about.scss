@@ -1,0 +1,65 @@
+@import "colorVariable";
+.aboutProfile {
+  background: $backgroundColor;
+  flex-flow: column;
+  color: $text;
+  padding-top: 5rem;
+  height: 90vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.aboutName {
+  padding-bottom: 3rem;
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: 200;
+  }
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: 200;
+  }
+  p {
+    font-size: 1.8em;
+  }
+}
+
+.aboutBread {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  p {
+    font-size: 1rem;
+  }
+  img {
+    border-radius: 50%;
+  }
+}
+.breadContainer {
+  width: 40%;
+}
+
+.breadImg {
+  align-self: center;
+}
+
+//for smaller devices
+@media screen and (max-width: 1024px) {
+  .aboutBread {
+    flex-direction: column;
+    p {
+      font-size: 1.5em;
+    }
+  }
+  .breadContainer {
+    width: 80%;
+  }
+  .breadImg {
+    margin-top: 4rem;
+  }
+}
